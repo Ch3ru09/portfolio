@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3f8fe;
+  --primary: #286ce4;
+  --accent: #5291eb;
+  --secondary: #8fb2e4;
+  --foreground: #030a14;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background-color: transparent;
+  color: color-mix(in oklab, var(--primary) 50%, var(--background));
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+  background-color: var(--background);
+  background-image: url("/background.svg");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-size: cover; */
+  opacity: 0.2;
+  z-index: -1;
+}
+
