@@ -14,15 +14,15 @@ export default function ChangePage() {
   return (
     <Link
       href={url}
-      className="flex flex-col h-1/2 justify-end-safe items-center"
+      className="flex flex-col h-1/2 justify-end-safe items-center gap-2"
     >
-      <h2 className="[writing-mode:sideways-rl] text-center origin-center w-fit text-5xl">
+      <h2 className="[writing-mode:sideways-lr] text-center origin-center w-fit text-4xl font-heading font-bold">
         {text}
       </h2>
       <Image
         src={ArrowLeft}
         alt="Arrow pointing left"
-        className="aspect-square w-3/4 h-auto"
+        className="aspect-square w-1/4 h-auto"
       />
     </Link>
   );

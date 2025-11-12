@@ -11,7 +11,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
+  --font-heading: var(--font-amulya);
+  --font-body: var(--font-synonym);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -38,7 +42,7 @@ body::before {
   height: 100%;
   width: 100%;
   /* background-size: cover; */
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: -1;
 }
 

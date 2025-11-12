@@ -9,12 +9,23 @@ export default function HomeLayout({
 }>) {
   return (
     <>
-      <nav className="h-screen w-24 fixed">
-        <Image src={Chevrons} alt="Chevrons pointed down" />
+      <nav className="h-screen w-24 fixed flex flex-col justify-between py-16">
+        <Image
+          src={Chevrons}
+          alt="Chevrons pointed down"
+          className="-translate-x-2/5 w-1/2 "
+        />
         <ChangePage />
       </nav>
-      <>{children}</>
-      <nav></nav>
+      <main className="w-[calc(100vw-12rem)] m-auto">{children}</main>
+      <nav className="right-0 h-screen w-24 fixed flex flex-col items-end-safe justify-between py-16">
+        <div></div>
+        <Image
+          src={Chevrons}
+          alt="Chevrons pointed down"
+          className="translate-x-2/5 w-1/2"
+        />
+      </nav>
     </>
   );
 }
