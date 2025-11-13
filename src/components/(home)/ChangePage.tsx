@@ -12,10 +12,7 @@ export default function ChangePage() {
   const { url, text } = getURL(pathname);
 
   return (
-    <Link
-      href={url}
-      className="flex flex-col h-1/2 justify-end-safe items-center gap-2"
-    >
+    <Link href={url} className="flex flex-col items-center gap-2">
       <h2 className="[writing-mode:sideways-lr] text-center origin-center w-fit text-4xl font-heading font-bold">
         {text}
       </h2>
