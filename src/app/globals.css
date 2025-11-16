@@ -32,6 +32,7 @@ body {
   font-family: var(--font-synonym);
   font-weight: 500;
   position: relative;
+  min-height: 100vh;
 }
 
 body::before {

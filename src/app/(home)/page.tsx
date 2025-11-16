@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className="ml-[10%] mr-[10%] flex">
-        <div>
+        <div className="sticky top-24">
           <h1 className="text-6xl font-heading font-bold text-primary mt-16">
             Portfolio
           </h1>
@@ -18,14 +18,16 @@ export default function Home() {
             })}
           </ul>
         </div>
-        <ul className="flex flex-col gap-4">
+        <ul className="flex flex-col gap-4 grow mt-[25%]">
           {projects.map((x, i) => {
             return (
-              <li
-                className="text-2xl font-body flex justify-center bg-foreground aspect-square"
-                key={i}
-              >
-                <Link href={"/project/" + x.link}>{x.title}</Link>
+              <li className="text-2xl font-body aspect-square w-1/4" key={i}>
+                <Link
+                  href={"/project/" + x.link}
+                  className="w-full h-full inline-block text-center bg-foreground"
+                >
+                  {x.title}
+                </Link>
               </li>
             );
           })}
