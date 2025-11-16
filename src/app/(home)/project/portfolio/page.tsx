@@ -2,42 +2,60 @@ import Image from "next/image";
 import SmallChevron from "./SmallChevron";
 import TimelineArrow from "./TimelineArrow";
 
+import NextjsLogo from "./assets/NextjsLogo";
+import ReactLogo from "./assets/ReactLogo";
+import TailwindLogo from "./assets/TailwindLogo";
+import TypescriptLogo from "./assets/TypescriptLogo";
+
 export default function PortfolioPage() {
   return (
     <div className="w-4/5 m-auto mt-24">
       <div className="flex">
         <Image className="basis-0 grow" src="/" alt="" width={0} height={0} />
-        <div className="basis-0 grow">
-          <h1>Portfolio</h1>
-          <p>
-            Here&apos;s all you need to know about this website, from its design
-            process to its deployment, passing of course through the building
-            process.
+        <div className="basis-0 grow gap">
+          <h1 className="font-heading font-bold text-6xl text-primary">
+            Portfolio
+          </h1>
+          <p className="mt-4 mb-8 mx-2">
+            This page offers a behind the scenes highlight of the creative and
+            technical decisions behind this portfolio. From early sketches to
+            refined prototypes, it outlines how each element of the site was
+            shaped with intention; focusing on clarity, personality, and a
+            seamless user experience.
           </p>
-          <h2>Technologies</h2>
-          <div></div>
+          <div className="flex gap-4 my-4">
+            <NextjsLogo />
+            <ReactLogo />
+            <TailwindLogo />
+            <TypescriptLogo />
+          </div>
         </div>
       </div>
       <div>
-        <header className="flex justify-between w-full">
-          <h2>Timeline</h2>
-          <button className="flex">
-            View Full Timeline <SmallChevron />
-          </button>
-        </header>
-        <TimelineArrow />
+        <h2 className="font-heading font-bold text-4xl text-primary mt-32">
+          Timeline
+        </h2>
+        <div className="mt-8 ml-16">
+          <TimelineArrow />
+        </div>
       </div>
       <div>
         <header className="flex justify-between">
-          <h2>Challenges</h2>
-          <h2>Solutions</h2>
+          <h2 className="font-heading font-bold text-4xl text-primary mt-8">
+            Challenges
+          </h2>
+          <h2 className="font-heading font-bold text-4xl text-primary mt-8">
+            Solutions
+          </h2>
         </header>
         <ul>
           <li></li>
         </ul>
       </div>
       <div>
-        <h2>Future Plans</h2>
+        <h2 className="font-heading font-bold text-4xl text-primary mt-8">
+          Future Plans
+        </h2>
       </div>
     </div>
   );

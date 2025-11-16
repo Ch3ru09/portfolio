@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import ArrowLeft from "@/assets/arrow-left.svg";
 import Image from "next/image";
 
-export default function ChangePage() {
+export default function ChangePage({ direction }: { direction: -1 | 1 }) {
   const pathname = usePathname();
 
   const { url, text } = getURL(pathname);
@@ -20,6 +20,7 @@ export default function ChangePage() {
         src={ArrowLeft}
         alt="Arrow pointing left"
         className="aspect-square w-1/4 h-auto"
+        style={{ scale: `${direction} 1` }}
       />
     </Link>
   );
