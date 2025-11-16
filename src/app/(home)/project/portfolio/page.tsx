@@ -6,6 +6,7 @@ import NextjsLogo from "./assets/NextjsLogo";
 import ReactLogo from "./assets/ReactLogo";
 import TailwindLogo from "./assets/TailwindLogo";
 import TypescriptLogo from "./assets/TypescriptLogo";
+import Link from "next/link";
 
 export default function PortfolioPage() {
   return (
@@ -22,6 +23,9 @@ export default function PortfolioPage() {
             refined prototypes, it outlines how each element of the site was
             shaped with intention; focusing on clarity, personality, and a
             seamless user experience.
+          </p>
+          <p>
+            <Link href={"/project/portfolio/devlog"}>See devlog</Link>
           </p>
           <div className="flex gap-4 my-4">
             <NextjsLogo />
