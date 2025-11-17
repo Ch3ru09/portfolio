@@ -10,7 +10,7 @@ export default function HomeLayout({
       <nav className="h-screen w-24 fixed flex flex-col py-16 grow">
         <LeftNav />
       </nav>
-      <main className="w-[calc(100vw-12rem)] m-auto">{children}</main>
+      <main className="w-[calc(100vw-12rem)] m-[0_auto]">{children}</main>
       <nav className="right-0 h-screen w-24 fixed flex flex-col py-16 justify-end-safe items-end-safe">
         <RightNav />
       </nav>
