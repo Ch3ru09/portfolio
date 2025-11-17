@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SmallChevron from "./SmallChevron";
 import TimelineArrow from "./TimelineArrow";
 
 import NextjsLogo from "./assets/NextjsLogo";
@@ -30,10 +29,34 @@ export default function PortfolioPage() {
             </Link>
           </p>
           <div className="flex gap-4 my-4">
-            <NextjsLogo />
-            <ReactLogo />
-            <TailwindLogo />
-            <TypescriptLogo />
+            <Link
+              href="https://nextjs.org/"
+              target="_blank"
+              className="hover:cursor-pointer hover:text-primary"
+            >
+              <NextjsLogo />
+            </Link>
+            <Link
+              href="https://react.dev/"
+              target="_blank"
+              className="hover:cursor-pointer hover:text-primary"
+            >
+              <ReactLogo />
+            </Link>
+            <Link
+              href="https://tailwindcss.com/"
+              target="_blank"
+              className="hover:cursor-pointer hover:text-primary"
+            >
+              <TailwindLogo />
+            </Link>
+            <Link
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+              className="hover:cursor-pointer hover:text-primary"
+            >
+              <TypescriptLogo />
+            </Link>
           </div>
         </div>
       </div>
