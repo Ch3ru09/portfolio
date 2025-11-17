@@ -25,7 +25,9 @@ export default function PortfolioPage() {
             seamless user experience.
           </p>
           <p>
-            <Link href={"/project/portfolio/devlog"}>See devlog</Link>
+            <Link href={"/project/portfolio/devlog"} className="mx-2">
+              See devlog
+            </Link>
           </p>
           <div className="flex gap-4 my-4">
             <NextjsLogo />

@@ -33,7 +33,7 @@ function getURL(path: string): { url: string; text: string } {
     case "/about":
       return { url: "/", text: "Portfolio" };
     default:
-      return { url: "/", text: "Back" };
+      return { url: path.split("/").slice(0, -1).join("/"), text: "Back" };
   }
 }
 
