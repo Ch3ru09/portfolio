@@ -16,18 +16,6 @@ export default function Devlog() {
                 <h2>{log.title}</h2>
               </div>
               <p className="ml-4 mt-2">{log.log}</p>
-              {log.todos.length > 0 && (
-                <>
-                  <h3 className="mt-6 text-primary text-2xl font-heading font-bold">
-                    Todo Tomorrow
-                  </h3>
-                  <ul className="ml-4 mt-2">
-                    {log.todos.map((todo, j) => {
-                      return <li key={j}>{todo}</li>;
-                    })}
-                  </ul>
-                </>
-              )}
               {log.is_done.length > 0 && (
                 <>
                   <h3 className="mt-6 text-primary text-2xl font-heading font-bold">
@@ -35,6 +23,18 @@ export default function Devlog() {
                   </h3>
                   <ul className="ml-4 mt-2">
                     {log.is_done.map((todo, j) => {
+                      return <li key={j}>{todo}</li>;
+                    })}
+                  </ul>
+                </>
+              )}
+              {log.todos.length > 0 && (
+                <>
+                  <h3 className="mt-6 text-primary text-2xl font-heading font-bold">
+                    Todo Tomorrow
+                  </h3>
+                  <ul className="ml-4 mt-2">
+                    {log.todos.map((todo, j) => {
                       return <li key={j}>{todo}</li>;
                     })}
                   </ul>

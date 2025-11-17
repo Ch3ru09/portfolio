@@ -3,23 +3,31 @@
     "day": 0,
     "title": "First day of logging",
     "log": "I just deployed the portfolio on vercel, I've had a few days of creating process that is documented. The sketching of the initial idea and the figma designing process are documented and will be added to the portfolio page. There's still a lot to be done, fighting!!",
+    "is_done": [],
     "todos": [
       "Add devlog to portfolio page",
       "Add picture for About me",
       "Add description for About me",
       "Add education for About me"
-    ],
-    "is_done": []
+    ]
   },
   {
     "day": 1,
     "title": "Creating About me",
     "log": "Between the laundry back and forth and shopping trip with my roommates, I managed to fix some bugs, made part of the \"about me\" page and added the devlog page",
-    "todos": ["Finish description for About me"],
     "is_done": [
       "Add devlog to portfolio page",
       "Add picture for About me",
       "Add education for About me"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add icons to devlog todolist",
+      "Add icons to devlog done",
+      "Add technologies used for About me",
+      "Add framer motion",
+      "Add animations for home page"
     ]
   }
 ]
