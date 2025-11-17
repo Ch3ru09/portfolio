@@ -27,13 +27,15 @@ export default function ChangePage({ direction }: { direction: -1 | 1 }) {
 }
 
 function getURL(path: string): { url: string; text: string } {
+  const back = path.split("/").slice(0, -1).join("/");
+
   switch (path) {
     case "/":
       return { url: "/about", text: "About me" };
     case "/about":
       return { url: "/", text: "Portfolio" };
     default:
-      return { url: path.split("/").slice(0, -1).join("/"), text: "Back" };
+      return { url: back == "/project" ? "/" : back, text: "Back" };
   }
 }
 
