@@ -16,6 +16,7 @@
   --color-secondary: var(--secondary);
   --font-heading: var(--font-amulya);
   --font-body: var(--font-synonym);
+  --font-calligraphy: var(--font-calligraphy);
 }
 
 /* @media (prefers-color-scheme: dark) {

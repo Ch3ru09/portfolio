@@ -1,4 +1,4 @@
-export default function TypescriptLogo() {
+export default function TypescriptLogo({ className }: { className: string }) {
   return (
     <svg
       width="100"
@@ -6,7 +6,7 @@ export default function TypescriptLogo() {
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="aspect-square w-12 h-auto"
+      className={className}
     >
       <g clipPath="url(#clip0_32_33)">
         <path

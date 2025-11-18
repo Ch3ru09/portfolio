@@ -34,28 +34,28 @@ export default function PortfolioPage() {
               target="_blank"
               className="hover:cursor-pointer hover:text-primary"
             >
-              <NextjsLogo />
+              <NextjsLogo className="aspect-square w-12 h-auto" />
             </Link>
             <Link
               href="https://react.dev/"
               target="_blank"
               className="hover:cursor-pointer hover:text-primary"
             >
-              <ReactLogo />
+              <ReactLogo className="aspect-square w-12 h-auto" />
             </Link>
             <Link
               href="https://tailwindcss.com/"
               target="_blank"
               className="hover:cursor-pointer hover:text-primary"
             >
-              <TailwindLogo />
+              <TailwindLogo className="aspect-square w-12 h-auto" />
             </Link>
             <Link
               href="https://www.typescriptlang.org/"
               target="_blank"
               className="hover:cursor-pointer hover:text-primary"
             >
-              <TypescriptLogo />
+              <TypescriptLogo className="aspect-square w-12 h-auto" />
             </Link>
           </div>
         </div>

@@ -1,19 +1,9 @@
-import localFont from "next/font/local";
 import Image from "next/image";
 
 import PortraitImage from "./assets/portrait.webp";
 import UwaterlooLogo from "./assets/uwaterloo_logo.png";
 import ChamplainLogo from "./assets/champlain_logo.png";
 import JDLMLogo from "./assets/jdlm_logo.svg";
-
-const Calligraphy = localFont({
-  src: [
-    {
-      path: "../../../assets/fonts/Calligraphy/hanyiqingzhouxing.ttf",
-    },
-  ],
-  display: "swap",
-});
 
 export default function AboutPage() {
   return (
@@ -45,30 +35,18 @@ export default function AboutPage() {
         </ul>
       </div>
       <div className="flex flex-col items-center basis-0 grow-2 gap-8">
-        <h1 className="flex justify-center text-primary">
+        <h1 className="font-calligraphy flex justify-center text-primary">
           <div className="flex items-center mr-6">
-            <p className={Calligraphy.className + " text-8xl"}>梁</p>
-            <p
-              className={Calligraphy.className + " [writing-mode:sideways-rl]"}
-            >
-              Liang
-            </p>
+            <p className={"text-8xl"}>梁</p>
+            <p className={" [writing-mode:sideways-rl]"}>Liang</p>
           </div>
           <div className="flex items-center">
-            <p className={Calligraphy.className + " text-8xl"}>栩</p>
-            <p
-              className={Calligraphy.className + " [writing-mode:sideways-rl]"}
-            >
-              Xu
-            </p>
+            <p className={"text-8xl"}>栩</p>
+            <p className={"[writing-mode:sideways-rl]"}>Xu</p>
           </div>
           <div className="flex items-center">
-            <p className={Calligraphy.className + " text-8xl"}>宁</p>
-            <p
-              className={Calligraphy.className + " [writing-mode:sideways-rl]"}
-            >
-              Ning
-            </p>
+            <p className={"text-8xl"}>宁</p>
+            <p className={"[writing-mode:sideways-rl]"}>Ning</p>
           </div>
         </h1>
         <p className="w-3/4">

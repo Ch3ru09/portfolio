@@ -26,6 +26,16 @@ const Synonym = localFont({
   variable: "--font-synonym",
 });
 
+const Calligraphy = localFont({
+  src: [
+    {
+      path: "../assets/fonts/Calligraphy/hanyiqingzhouxing.ttf",
+    },
+  ],
+  display: "swap",
+  variable: "--font-calligraphy",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased flex ${Amulya.variable} ${Synonym.variable}`}
+        className={`antialiased flex ${Amulya.variable} ${Synonym.variable} ${Calligraphy.variable}`}
       >
         {children}
       </body>
