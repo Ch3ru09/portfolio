@@ -15,7 +15,7 @@
   {
     "day": 1,
     "title": "Creating About me",
-    "log": "Between the laundry back and forth and shopping trip with my roommates, I managed to fix some bugs, made part of the \"about me\" page and added the devlog page",
+    "log": "Between the laundry back and forth and shopping trip with my roommates, I managed to fix some bugs, made part of the \"about me\" page and added the devlog page.",
     "is_done": [
       "Add devlog to portfolio page",
       "Add picture for About me",
@@ -27,6 +27,26 @@
       "Add picture for portfolio",
       "Add icons to devlog todolist",
       "Add icons to devlog done",
+      "Add technologies used for About me",
+      "Add framer motion",
+      "Add animations for home page"
+    ]
+  },
+  {
+    "day": 2,
+    "title": "Devlog Icons",
+    "log": "Long day at school, only managed to add some icons to the devlog.",
+    "is_done": ["Add icons to devlog todolist", "Add icons to devlog done"],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add framer motion",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
       "Add technologies used for About me",
       "Add framer motion",
       "Add animations for home page"
