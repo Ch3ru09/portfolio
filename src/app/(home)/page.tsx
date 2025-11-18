@@ -3,28 +3,28 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="ml-[10%] mr-[10%] flex">
+      <div className="mr-[10%] ml-[10%] flex">
         <div className="fixed top-24">
-          <h1 className="text-6xl font-heading font-bold text-primary">
+          <h1 className="font-heading text-primary text-6xl font-bold">
             Portfolio
           </h1>
           <ul className="pl-8">
             {projects.map((x, i) => {
               return (
-                <li className="text-2xl font-body" key={i}>
+                <li className="font-body text-2xl" key={i}>
                   — {x.title}
                 </li>
               );
             })}
           </ul>
         </div>
-        <ul className="flex flex-col gap-4 grow mt-[50%]">
+        <ul className="mt-[50%] flex grow flex-col gap-4">
           {projects.map((x, i) => {
             return (
-              <li className="text-2xl font-body aspect-square w-1/4" key={i}>
+              <li className="font-body aspect-square w-1/4 text-2xl" key={i}>
                 <Link
                   href={"/project/" + x.link}
-                  className="w-52 h-52 flex justify-center items-center text-center bg-background text-primary"
+                  className="bg-primary-20 text-primary flex h-52 w-52 items-center justify-center text-center"
                 >
                   <h2>{x.title}</h2>
                 </Link>
@@ -49,4 +49,3 @@ type Project = {
   title: string;
   link: string;
 };
-

@@ -44,11 +44,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased flex ${Amulya.variable} ${Synonym.variable} ${Calligraphy.variable}`}
+        className={`flex antialiased ${Amulya.variable} ${Synonym.variable} ${Calligraphy.variable}`}
       >
         {children}
       </body>
     </html>
   );
 }
-

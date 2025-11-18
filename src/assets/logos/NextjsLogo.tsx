@@ -53,4 +53,3 @@ export default function NextjsLogo({ className }: { className: string }) {
     </svg>
   );
 }
-

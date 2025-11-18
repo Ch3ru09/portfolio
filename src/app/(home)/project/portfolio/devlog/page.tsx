@@ -6,7 +6,7 @@ import Addmark from "./Addmark";
 
 export default function Devlog() {
   return (
-    <ul className="flex flex-col gap-16 mt-12 max-w-160 mb-12">
+    <ul className="mt-12 mb-12 flex max-w-160 flex-col gap-16">
       {Logs.map((log, i) => {
         return (
           <li key={i} className="flex">
@@ -14,17 +14,17 @@ export default function Devlog() {
               <SmallChevron />
             </div>
             <div>
-              <div className="flex text-primary text-4xl font-heading font-bold">
+              <div className="text-primary font-heading flex text-4xl font-bold">
                 <p>Day {log.day} — </p> &nbsp;
                 <h2>{log.title}</h2>
               </div>
-              <p className="ml-4 mt-2">{log.log}</p>
+              <p className="mt-2 ml-4">{log.log}</p>
               {(log.is_done.length > 0 || log.not_done.length > 0) && (
                 <>
-                  <h3 className="mt-6 text-primary text-2xl font-heading font-bold">
+                  <h3 className="text-primary font-heading mt-6 text-2xl font-bold">
                     Done Today
                   </h3>
-                  <ul className="ml-4 mt-2">
+                  <ul className="mt-2 ml-4">
                     {log.is_done.map((todo, j) => {
                       return (
                         <li key={j} className="flex items-center gap-2">
@@ -46,10 +46,10 @@ export default function Devlog() {
               )}
               {log.todos.length > 0 && (
                 <>
-                  <h3 className="mt-6 text-primary text-2xl font-heading font-bold">
+                  <h3 className="text-primary font-heading mt-6 text-2xl font-bold">
                     Todo Tomorrow
                   </h3>
-                  <ul className="ml-4 mt-2">
+                  <ul className="mt-2 ml-4">
                     {log.todos.map((todo, j) => {
                       return (
                         <li key={j} className="flex items-center gap-2">
@@ -68,4 +68,3 @@ export default function Devlog() {
     </ul>
   );
 }
-

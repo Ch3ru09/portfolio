@@ -1,4 +1,8 @@
-export default function TypescriptLogo({ className }: { className: string }) {
+export default function TypescriptLogo({
+  className = "",
+}: {
+  className: string;
+}) {
   return (
     <svg
       width="100"
@@ -28,4 +32,3 @@ export default function TypescriptLogo({ className }: { className: string }) {
     </svg>
   );
 }
-
