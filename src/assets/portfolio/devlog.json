@@ -54,10 +54,23 @@
   },
   {
     "day": 3,
-    "title": "",
-    "log": "",
-    "is_done": [],
-    "not_done": [],
-    "todos": []
+    "title": "So many readings",
+    "log": "I put some time aside today to work on this website where I still didn't do a lot, but outside of this website, I got to finish some of the school assigned projects. Also, since I want to become an expert on the subject I'll write for my english essay, I need to go through so many readings. It's worth it in the end",
+    "is_done": [
+      "Added sorting to tailwind css classes for better readability",
+      "Add framer motion"
+    ],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ]
   }
 ]

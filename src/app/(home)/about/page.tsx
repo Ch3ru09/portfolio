@@ -39,9 +39,9 @@ export default function AboutPage() {
           <h2 className="font-heading text-primary text-center text-4xl font-bold">
             Technical skills
           </h2>
-          <ul>
-            <li>
-              <TypescriptLogo className="" />
+          <ul className="mt-4 flex flex-col">
+            <li className="flex h-16">
+              <TypescriptLogo className="h-full w-auto" />
             </li>
           </ul>
         </div>
