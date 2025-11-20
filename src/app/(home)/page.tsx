@@ -6,7 +6,7 @@ export default function Home() {
       <div className="mr-[10%] ml-[10%] flex">
         <div className="fixed top-24">
           <h1 className="font-heading text-primary text-6xl font-bold">
-            Portfolio
+            Liang, Xu ning
           </h1>
           <ul className="pl-8">
             {projects.map((x, i) => {

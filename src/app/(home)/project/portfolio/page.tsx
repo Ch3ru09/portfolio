@@ -14,7 +14,7 @@ export default function PortfolioPage() {
         <Image className="grow basis-0" src="/" alt="" width={0} height={0} />
         <div className="gap grow basis-0">
           <h1 className="font-heading text-primary text-6xl font-bold">
-            Liang, Xu ning
+            Portfolio
           </h1>
           <p className="mx-2 mt-4 mb-8">
             This page offers a behind the scenes highlight of the creative and
