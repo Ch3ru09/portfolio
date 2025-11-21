@@ -110,5 +110,19 @@
       "Add animations for home page",
       "Add links for socials and everything"
     ]
+  },
+  {
+    "day": 6,
+    "title": "",
+    "log": "",
+    "is_done": ["Add links for socials and everything"],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add graph package",
+      "Add animations for home page"
+    ],
+    "todos": []
   }
 ]

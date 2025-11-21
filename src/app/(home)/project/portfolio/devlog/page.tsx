@@ -6,7 +6,7 @@ import Addmark from "./Addmark";
 
 export default function Devlog() {
   return (
-    <ul className="mt-12 mb-12 flex max-w-160 flex-col gap-16">
+    <ul className="mt-12 mb-12 ml-12 flex max-w-160 flex-col gap-16">
       {Logs.map((log, i) => {
         return (
           <li key={i} className="flex">
