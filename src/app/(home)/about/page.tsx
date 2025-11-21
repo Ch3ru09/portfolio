@@ -4,7 +4,6 @@ import PortraitImage from "./assets/portrait.webp";
 import UwaterlooLogo from "./assets/uwaterloo_logo.png";
 import ChamplainLogo from "./assets/champlain_logo.png";
 import JDLMLogo from "./assets/jdlm_logo.svg";
-import TypescriptLogo from "@/assets/logos/TypescriptLogo";
 
 export default function AboutPage() {
   return (
@@ -34,17 +33,6 @@ export default function AboutPage() {
             />
           </li>
         </ul>
-        <hr />
-        <div>
-          <h2 className="font-heading text-primary text-center text-4xl font-bold">
-            Technical skills
-          </h2>
-          <ul className="mt-4 flex flex-col">
-            <li className="flex h-16">
-              <TypescriptLogo className="h-full w-auto" />
-            </li>
-          </ul>
-        </div>
       </div>
       <div className="flex grow-2 basis-0 flex-col items-center gap-8">
         <h1 className="font-calligraphy text-primary flex justify-center">
