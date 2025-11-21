@@ -1,4 +1,4 @@
-export default function GithubLogo({ className }: { className: string }) {
+export default function GithubLogo({ className = "" }: { className?: string }) {
   return (
     <svg
       width="100"

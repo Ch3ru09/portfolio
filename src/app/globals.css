@@ -13,51 +13,33 @@
   --color-foreground: var(--foreground);
 
   --color-primary: var(--primary);
-  --color-primary-10: color-mix(
-    in oklab,
-    var(--primary) 10%,
-    var(--background)
-  );
-  --color-primary-20: color-mix(
-    in oklab,
-    var(--primary) 20%,
-    var(--background)
-  );
-  --color-primary-30: color-mix(
-    in oklab,
-    var(--primary) 30%,
-    var(--background)
-  );
-  --color-primary-40: color-mix(
-    in oklab,
-    var(--primary) 40%,
-    var(--background)
-  );
-  --color-primary-50: color-mix(
-    in oklab,
-    var(--primary) 50%,
-    var(--background)
-  );
-  --color-primary-60: color-mix(
-    in oklab,
-    var(--primary) 60%,
-    var(--background)
-  );
-  --color-primary-70: color-mix(
-    in oklab,
-    var(--primary) 70%,
-    var(--background)
-  );
-  --color-primary-80: color-mix(
-    in oklab,
-    var(--primary) 80%,
-    var(--background)
-  );
-  --color-primary-90: color-mix(
-    in oklab,
-    var(--primary) 90%,
-    var(--background)
-  );
+  --color-primary-10: color-mix(in oklab,
+      var(--primary) 10%,
+      var(--background));
+  --color-primary-20: color-mix(in oklab,
+      var(--primary) 20%,
+      var(--background));
+  --color-primary-30: color-mix(in oklab,
+      var(--primary) 30%,
+      var(--background));
+  --color-primary-40: color-mix(in oklab,
+      var(--primary) 40%,
+      var(--background));
+  --color-primary-50: color-mix(in oklab,
+      var(--primary) 50%,
+      var(--background));
+  --color-primary-60: color-mix(in oklab,
+      var(--primary) 60%,
+      var(--background));
+  --color-primary-70: color-mix(in oklab,
+      var(--primary) 70%,
+      var(--background));
+  --color-primary-80: color-mix(in oklab,
+      var(--primary) 80%,
+      var(--background));
+  --color-primary-90: color-mix(in oklab,
+      var(--primary) 90%,
+      var(--background));
 
   --color-accent: var(--accent);
   --color-secondary: var(--secondary);
@@ -66,12 +48,9 @@
   --font-calligraphy: var(--font-calligraphy);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+* {
+  outline: none
+}
 
 body {
   background-color: transparent;
