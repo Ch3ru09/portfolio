@@ -10,36 +10,28 @@
 
 @theme inline {
   --color-background: var(--background);
+
   --color-foreground: var(--foreground);
+  --color-foreground-10: color-mix(in oklab, var(--foreground) 10%, var(--background));
+  --color-foreground-20: color-mix(in oklab, var(--foreground) 20%, var(--background));
+  --color-foreground-30: color-mix(in oklab, var(--foreground) 30%, var(--background));
+  --color-foreground-40: color-mix(in oklab, var(--foreground) 40%, var(--background));
+  --color-foreground-50: color-mix(in oklab, var(--foreground) 50%, var(--background));
+  --color-foreground-60: color-mix(in oklab, var(--foreground) 60%, var(--background));
+  --color-foreground-70: color-mix(in oklab, var(--foreground) 70%, var(--background));
+  --color-foreground-80: color-mix(in oklab, var(--foreground) 80%, var(--background));
+  --color-foreground-90: color-mix(in oklab, var(--foreground) 90%, var(--background));
 
   --color-primary: var(--primary);
-  --color-primary-10: color-mix(in oklab,
-      var(--primary) 10%,
-      var(--background));
-  --color-primary-20: color-mix(in oklab,
-      var(--primary) 20%,
-      var(--background));
-  --color-primary-30: color-mix(in oklab,
-      var(--primary) 30%,
-      var(--background));
-  --color-primary-40: color-mix(in oklab,
-      var(--primary) 40%,
-      var(--background));
-  --color-primary-50: color-mix(in oklab,
-      var(--primary) 50%,
-      var(--background));
-  --color-primary-60: color-mix(in oklab,
-      var(--primary) 60%,
-      var(--background));
-  --color-primary-70: color-mix(in oklab,
-      var(--primary) 70%,
-      var(--background));
-  --color-primary-80: color-mix(in oklab,
-      var(--primary) 80%,
-      var(--background));
-  --color-primary-90: color-mix(in oklab,
-      var(--primary) 90%,
-      var(--background));
+  --color-primary-10: color-mix(in oklab, var(--primary) 10%, var(--background));
+  --color-primary-20: color-mix(in oklab, var(--primary) 20%, var(--background));
+  --color-primary-30: color-mix(in oklab, var(--primary) 30%, var(--background));
+  --color-primary-40: color-mix(in oklab, var(--primary) 40%, var(--background));
+  --color-primary-50: color-mix(in oklab, var(--primary) 50%, var(--background));
+  --color-primary-60: color-mix(in oklab, var(--primary) 60%, var(--background));
+  --color-primary-70: color-mix(in oklab, var(--primary) 70%, var(--background));
+  --color-primary-80: color-mix(in oklab, var(--primary) 80%, var(--background));
+  --color-primary-90: color-mix(in oklab, var(--primary) 90%, var(--background));
 
   --color-accent: var(--accent);
   --color-secondary: var(--secondary);
@@ -49,7 +41,7 @@
 }
 
 * {
-  outline: none
+  outline: none;
 }
 
 body {

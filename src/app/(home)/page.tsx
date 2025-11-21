@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Cards, { Project } from "@/components/(home)/Cards";
 
 export default function Home() {
   return (
@@ -18,34 +18,16 @@ export default function Home() {
             })}
           </ul>
         </div>
-        <ul className="mt-[50%] flex grow flex-col gap-4">
-          {projects.map((x, i) => {
-            return (
-              <li className="font-body aspect-square w-1/4 text-2xl" key={i}>
-                <Link
-                  href={"/project/" + x.link}
-                  className="bg-primary-20 text-primary flex h-52 w-52 items-center justify-center text-center"
-                >
-                  <h2>{x.title}</h2>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        <Cards projects={projects} />
       </div>
     </>
   );
 }
 
 const projects: Project[] = [
-  { title: "Portfolio", link: "portfolio" },
-  { title: "RC Technique", link: "rctechnique" },
-  { title: "Dawnlight", link: "dawnlight" },
-  { title: "Blackjack", link: "blackjack" },
-  { title: "Pebble", link: "pebble" },
+  { title: "Portfolio", link: "portfolio", available: true },
+  { title: "RC Technique", link: "rctechnique", available: false },
+  { title: "Dawnlight", link: "dawnlight", available: false },
+  { title: "Blackjack", link: "blackjack", available: false },
+  { title: "Pebble", link: "pebble", available: false },
 ];
-
-type Project = {
-  title: string;
-  link: string;
-};

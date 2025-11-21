@@ -1,4 +1,4 @@
-import { LeftNav, RightNav } from "@/components/(home)/NavSides";
+import { LeftNav, RightNav } from "@/components/(home)/layout/NavSides";
 
 export default function HomeLayout({
   children,

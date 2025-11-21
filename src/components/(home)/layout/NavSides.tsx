@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-import ChangePage from "@/components/(home)/ChangePage";
+import ChangePage from "@/components/(home)/layout/ChangePage";
 import Chevrons from "@/assets/Chevrons-down.svg";
 import IconList from "./IconList";
 
