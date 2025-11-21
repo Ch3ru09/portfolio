@@ -55,7 +55,7 @@
   {
     "day": 3,
     "title": "So many readings",
-    "log": "I put some time aside today to work on this website where I still didn't do a lot, but outside of this website, I got to finish some of the school assigned projects. Also, since I want to become an expert on the subject I'll write for my english essay, I need to go through so many readings. It's worth it in the end",
+    "log": "I put some time aside today to work on this website where I still didn't do a lot, but outside of this website, I got to finish some of the school assigned projects. Also, since I want to become an expert on the subject I'll write for my english essay, I need to go through so many readings. It's worth it in the end.",
     "is_done": [
       "Added sorting to tailwind css classes for better readability",
       "Add framer motion"
@@ -76,7 +76,7 @@
   {
     "day": 4,
     "title": "Revision",
-    "log": "Had to revise for school, I'll try to at least to one thing tommorrow; from now on, no excuses",
+    "log": "Had to revise for school, I'll try to at least to one thing tommorrow; from now on, no excuses.",
     "is_done": [],
     "not_done": [
       "Finish description for About me",
@@ -89,6 +89,25 @@
       "Add picture for portfolio",
       "Add technologies used for About me",
       "Add animations for home page"
+    ]
+  },
+  {
+    "day": 5,
+    "title": "Research",
+    "log": "So I unfortunately didn't finish any of the tasks I laid down for today, but that's because I spent a lot of time rethinking how to make display of the skills I have a little more interesting, I kinda wanted to do something a little cooler than just a shit ton of icons in a box, so I decided on a graph it is... Let's see where this one brings me.",
+    "is_done": [],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page",
+      "Add links for socials and everything"
     ]
   }
 ]
