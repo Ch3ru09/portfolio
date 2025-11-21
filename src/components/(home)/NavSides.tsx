@@ -1,14 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import ChangePage from "@/components/(home)/ChangePage";
 import Chevrons from "@/assets/Chevrons-down.svg";
-import { usePathname } from "next/navigation";
-import Email from "@/assets/nav/Email";
-import GithubLogo from "@/assets/nav/GithubLogo";
-import LinkedinLogo from "@/assets/nav/LinkedinLogo";
-import Link from "next/link";
+import IconList from "./IconList";
 
 export function LeftNav() {
   const pathname = usePathname();
@@ -38,7 +35,10 @@ export function LeftNav() {
             className="w-1/2 -translate-x-2/5 transition-all duration-500"
           />
         ) : (
-          <ChangePage direction={1} />
+          <div className="flex flex-col items-center gap-8">
+            <IconList />
+            <ChangePage direction={1} />
+          </div>
         )}
       </div>
     </>
@@ -67,33 +67,7 @@ export function RightNav() {
       <div className="flex w-full grow basis-0 flex-col items-end-safe justify-end-safe">
         {pathname == "/about" ? (
           <div className="flex flex-col items-center gap-8">
-            <ul className="flex h-fit w-fit flex-col gap-4">
-              <li className="aspect-square h-auto w-12">
-                <Link
-                  href="mailto:xliang0905@gmail.com"
-                  className="hover:text-primary focus-visible:text-primary transition-colors duration-200"
-                >
-                  <Email className="h-auto w-full" />
-                </Link>
-              </li>
-              <li className="aspect-square h-auto w-12">
-                <Link
-                  href="https://github.com/Ch3ru09/"
-                  target="_blank"
-                  className="hover:text-primary focus-visible:text-primary transition-colors duration-200"
-                >
-                  <GithubLogo className="h-auto w-full" />
-                </Link>
-              </li>
-              <li className="aspect-square h-auto w-12">
-                <Link
-                  href="https://www.linkedin.com/in/xu-ning-liang-9632b523b/"
-                  className="hover:text-primary focus-visible:text-primary transition-colors duration-200"
-                >
-                  <LinkedinLogo className="h-auto w-full" />
-                </Link>
-              </li>
-            </ul>
+            <IconList />
             <ChangePage direction={-1} />
           </div>
         ) : (

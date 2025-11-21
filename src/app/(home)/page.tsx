@@ -8,7 +8,7 @@ export default function Home() {
           <h1 className="font-heading text-primary text-6xl font-bold">
             Liang, Xu ning
           </h1>
-          <ul className="pl-8">
+          <ul className="mt-8 pl-8">
             {projects.map((x, i) => {
               return (
                 <li className="font-body text-2xl" key={i}>
