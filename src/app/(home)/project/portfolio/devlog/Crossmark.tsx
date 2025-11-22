@@ -1,4 +1,4 @@
-export default function Crossmark() {
+export default function Crossmark({ className }: { className: string }) {
   return (
     <svg
       width="256"
@@ -6,7 +6,7 @@ export default function Crossmark() {
       viewBox="0 0 256 256"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="aspect-square h-4 w-auto"
+      className={className}
     >
       <g clipPath="url(#clip0_44_87)">
         <path

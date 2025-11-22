@@ -28,7 +28,7 @@ export default function Devlog() {
                     {log.is_done.map((todo, j) => {
                       return (
                         <li key={j} className="flex items-center gap-2">
-                          <Checkmark />
+                          <Checkmark className="aspect-square h-auto w-4" />
                           <p>{todo}</p>
                         </li>
                       );
@@ -36,7 +36,7 @@ export default function Devlog() {
                     {log.not_done.map((todo, j) => {
                       return (
                         <li key={j} className="flex items-center gap-2">
-                          <Crossmark />
+                          <Crossmark className="aspect-square h-auto w-4" />
                           <p>{todo}</p>
                         </li>
                       );
@@ -53,7 +53,7 @@ export default function Devlog() {
                     {log.todos.map((todo, j) => {
                       return (
                         <li key={j} className="flex items-center gap-2">
-                          <Addmark />
+                          <Addmark className="aspect-square h-auto w-4" />
                           <p>{todo}</p>
                         </li>
                       );

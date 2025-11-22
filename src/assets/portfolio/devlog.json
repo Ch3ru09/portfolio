@@ -115,7 +115,10 @@
     "day": 6,
     "title": "",
     "log": "",
-    "is_done": ["Add links for socials and everything"],
+    "is_done": [
+      "Add links for socials and everything",
+      "Made non-built pages on home unavailable"
+    ],
     "not_done": [
       "Finish description for About me",
       "Add picture for portfolio",
