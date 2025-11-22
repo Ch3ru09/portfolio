@@ -113,8 +113,8 @@
   },
   {
     "day": 6,
-    "title": "",
-    "log": "",
+    "title": "Socially connected now",
+    "log": "I added links to my socials and disabled the pages that are not reachable for now. I also did some research today on how I want to display the technologies I can use. In the end, I settled on using D3 to create a disjoint force-directed graph of the things I know; I sure hope this does not bite me back in the future.",
     "is_done": [
       "Add links for socials and everything",
       "Made non-built pages on home unavailable"
@@ -126,6 +126,12 @@
       "Add graph package",
       "Add animations for home page"
     ],
-    "todos": []
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add graph package",
+      "Add animations for home page"
+    ]
   }
 ]
