@@ -133,5 +133,23 @@
       "Add graph package",
       "Add animations for home page"
     ]
+  },
+  {
+    "day": 7,
+    "title": "Added d3",
+    "log": "I finally finished my school project, and I just added d3 for tech, hopefully I can do more tomorrow",
+    "is_done": ["Add graph package"],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ]
   }
 ]
