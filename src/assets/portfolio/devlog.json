@@ -151,5 +151,23 @@
       "Add technologies used for About me",
       "Add animations for home page"
     ]
+  },
+  {
+    "day": 8,
+    "title": "You win some, you lose some...",
+    "log": "Though I was really productive today outside of website building, it isn't the same on the website... We had to stay wake until 3am in the morning to finish our project and present it for most of the day. For the evening, I guided my friend around school and for him to see most of the residence homes.",
+    "is_done": [],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ]
   }
 ]
