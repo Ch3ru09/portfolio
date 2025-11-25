@@ -169,5 +169,23 @@
       "Add technologies used for About me",
       "Add animations for home page"
     ]
+  },
+  {
+    "day": 9,
+    "title": "Engl...",
+    "log": "I spent the better part of my day writing my paper for English... Nothing more to report, I was not able advance the website today; It's 2 am, I'm going to sleep...",
+    "is_done": [],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ]
   }
 ]
