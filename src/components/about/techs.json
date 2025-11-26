@@ -1,0 +1,17 @@
+{
+  "nodes": [
+    {
+      "name": "Typescript",
+      "id": 1
+    },
+    {
+      "name": "React"
+    }
+  ],
+  "links": [
+    {
+      "source": "Typescript",
+      "target": "React"
+    }
+  ]
+}
