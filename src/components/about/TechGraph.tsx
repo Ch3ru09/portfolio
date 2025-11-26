@@ -46,11 +46,13 @@ export default function TechGraph() {
       .append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
-      .selectAll("circle")
+      .selectAll("image")
       .data(nodes_data)
-      .join("circle")
-      .attr("r", (d) => d.r)
-      .attr("fill", (d) => color(d.group.toString()));
+      .join("image")
+      .attr("width", (d) => 2 * d.r)
+      .attr("height", (d) => 2 * d.r)
+      .attr("href", "/icon.svg");
+    // .attr("fill", (d) => color(d.group.toString()))
 
     node.append("title").text((d) => d.id);
 
@@ -72,7 +74,7 @@ export default function TechGraph() {
           ) {
             return null;
           }
-          return d.source.x;
+          return d.source.x + d.source.r;
         })
         .attr("y1", (d) => {
           if (
@@ -82,7 +84,7 @@ export default function TechGraph() {
           ) {
             return null;
           }
-          return d.source.y;
+          return d.source.y + d.source.r;
         })
         .attr("x2", (d) => {
           if (
@@ -92,7 +94,7 @@ export default function TechGraph() {
           ) {
             return null;
           }
-          return d.target.x;
+          return d.target.x + d.target.r;
         })
         .attr("y2", (d) => {
           if (
@@ -102,10 +104,10 @@ export default function TechGraph() {
           ) {
             return null;
           }
-          return d.target.y;
+          return d.target.y + d.target.r;
         });
 
-      node.attr("cx", (d) => d.x!).attr("cy", (d) => d.y!);
+      node.attr("x", (d) => d.x!).attr("y", (d) => d.y!);
     });
 
     function ondragstart(event) {
