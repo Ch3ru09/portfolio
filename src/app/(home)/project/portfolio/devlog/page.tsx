@@ -18,7 +18,11 @@ export default function Devlog() {
                 <p>Day {log.day} — </p> &nbsp;
                 <h2>{log.title}</h2>
               </div>
-              <p className="mt-2 ml-4">{log.log}</p>
+              <div className="mt-2 mr-4 flex w-4/5 flex-col gap-4">
+                {log.logs.map((x, j) => {
+                  return <p key={j}>{x}</p>;
+                })}
+              </div>
               {(log.is_done.length > 0 || log.not_done.length > 0) && (
                 <>
                   <h3 className="text-primary font-heading mt-6 text-2xl font-bold">

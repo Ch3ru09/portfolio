@@ -2,7 +2,9 @@
   {
     "day": 0,
     "title": "First day of logging",
-    "log": "I just deployed the portfolio on vercel, I've had a few days of creating process that is documented. The sketching of the initial idea and the figma designing process are documented and will be added to the portfolio page. There's still a lot to be done, fighting!!",
+    "logs": [
+      "I just deployed the portfolio on vercel, I've had a few days of creating process that is documented. The sketching of the initial idea and the figma designing process are documented and will be added to the portfolio page. There's still a lot to be done, fighting!!"
+    ],
     "is_done": [],
     "not_done": [],
     "todos": [
@@ -15,7 +17,9 @@
   {
     "day": 1,
     "title": "Creating About me",
-    "log": "Between the laundry back and forth and shopping trip with my roommates, I managed to fix some bugs, made part of the \"about me\" page and added the devlog page.",
+    "logs": [
+      "Between the laundry back and forth and shopping trip with my roommates, I managed to fix some bugs, made part of the \"about me\" page and added the devlog page."
+    ],
     "is_done": [
       "Add devlog to portfolio page",
       "Add picture for About me",
@@ -35,7 +39,9 @@
   {
     "day": 2,
     "title": "Devlog Icons",
-    "log": "Long day at school, only managed to add some icons to the devlog.",
+    "logs": [
+      "Long day at school, only managed to add some icons to the devlog."
+    ],
     "is_done": ["Add icons to devlog todolist", "Add icons to devlog done"],
     "not_done": [
       "Finish description for About me",
@@ -55,7 +61,9 @@
   {
     "day": 3,
     "title": "So many readings",
-    "log": "I put some time aside today to work on this website where I still didn't do a lot, but outside of this website, I got to finish some of the school assigned projects. Also, since I want to become an expert on the subject I'll write for my english essay, I need to go through so many readings. It's worth it in the end.",
+    "logs": [
+      "I put some time aside today to work on this website where I still didn't do a lot, but outside of this website, I got to finish some of the school assigned projects. Also, since I want to become an expert on the subject I'll write for my english essay, I need to go through so many readings. It's worth it in the end."
+    ],
     "is_done": [
       "Added sorting to tailwind css classes for better readability",
       "Add framer motion"
@@ -76,7 +84,9 @@
   {
     "day": 4,
     "title": "Revision",
-    "log": "Had to revise for school, I'll try to at least to one thing tommorrow; from now on, no excuses.",
+    "logs": [
+      "Had to revise for school, I'll try to at least to one thing tommorrow; from now on, no excuses."
+    ],
     "is_done": [],
     "not_done": [
       "Finish description for About me",
@@ -94,7 +104,9 @@
   {
     "day": 5,
     "title": "Research",
-    "log": "So I unfortunately didn't finish any of the tasks I laid down for today, but that's because I spent a lot of time rethinking how to make display of the skills I have a little more interesting, I kinda wanted to do something a little cooler than just a shit ton of icons in a box, so I decided on a graph it is... Let's see where this one brings me.",
+    "logs": [
+      "So I unfortunately didn't finish any of the tasks I laid down for today, but that's because I spent a lot of time rethinking how to make display of the skills I have a little more interesting, I kinda wanted to do something a little cooler than just a shit ton of icons in a box, so I decided on a graph it is... Let's see where this one brings me."
+    ],
     "is_done": [],
     "not_done": [
       "Finish description for About me",
@@ -114,7 +126,9 @@
   {
     "day": 6,
     "title": "Socially connected now",
-    "log": "I added links to my socials and disabled the pages that are not reachable for now. I also did some research today on how I want to display the technologies I can use. In the end, I settled on using D3 to create a disjoint force-directed graph of the things I know; I sure hope this does not bite me back in the future.",
+    "logs": [
+      "I added links to my socials and disabled the pages that are not reachable for now. I also did some research today on how I want to display the technologies I can use. In the end, I settled on using D3 to create a disjoint force-directed graph of the things I know; I sure hope this does not bite me back in the future."
+    ],
     "is_done": [
       "Add links for socials and everything",
       "Made non-built pages on home unavailable"
@@ -137,7 +151,9 @@
   {
     "day": 7,
     "title": "Added d3",
-    "log": "I finally finished my school project, and I just added d3 for tech, hopefully I can do more tomorrow",
+    "logs": [
+      "I finally finished my school project, and I just added d3 for tech, hopefully I can do more tomorrow"
+    ],
     "is_done": ["Add graph package"],
     "not_done": [
       "Finish description for About me",
@@ -154,8 +170,10 @@
   },
   {
     "day": 8,
-    "title": "You win some, you lose some...",
-    "log": "Though I was really productive today outside of website building, it isn't the same on the website... We had to stay wake until 3am in the morning to finish our project and present it for most of the day. For the evening, I guided my friend around school and for him to see most of the residence homes, fun times :)",
+    "title": "No lost time",
+    "logs": [
+      "Though I was really productive today outside of website building, it isn't the same on the website... We had to stay wake until 3am in the morning to finish our project and present it for most of the day. For the evening, I guided my friend around school and for him to see most of the residence homes, fun times :)"
+    ],
     "is_done": [],
     "not_done": [
       "Finish description for About me",
@@ -173,7 +191,9 @@
   {
     "day": 9,
     "title": "Engl...",
-    "log": "I spent the better part of my day writing my paper for English... Nothing more to report, I was not able advance the website today; It's 2 am, I'm going to sleep...",
+    "logs": [
+      "I spent the better part of my day writing my paper for English... Nothing more to report, I was not able advance the website today; It's 2 am, I'm going to sleep..."
+    ],
     "is_done": [],
     "not_done": [
       "Finish description for About me",
@@ -191,7 +211,10 @@
   {
     "day": 10,
     "title": "I'm trying really hard",
-    "log": "So today, the essay review went really well and I think I'll be able to learn a lot from it. I'm not here for that; I tried to implement a D3 disjointed force-directed graph but I ran into problems with the d3 types for typescript. Unless I missed something — for which I'll ask people who should know more than me — I think I'll contribute to d3/types...",
+    "logs": [
+      "So today, the essay review went really well and I think I'll be able to learn a lot from it. I'm not here for that; I tried to implement a D3 disjointed force-directed graph but I ran into problems with the d3 types for typescript. Unless I missed something — for which I'll ask people who should know more than me — I think I'll contribute to d3/types...",
+      "Update: I figured it out, my apologies to Tom Wanzek, Alex Ford, Boris Yankov, denisname, and Nathan Bierema; Though the documentation was scarce, I should've found and read the entire source code earlier instead of blaming the code..."
+    ],
     "is_done": [],
     "not_done": [
       "Finish description for About me",
