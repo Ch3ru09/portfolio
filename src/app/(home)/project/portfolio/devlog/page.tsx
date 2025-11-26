@@ -47,7 +47,7 @@ export default function Devlog() {
               {log.todos.length > 0 && (
                 <>
                   <h3 className="text-primary font-heading mt-6 text-2xl font-bold">
-                    Todo Tomorrow
+                    Todo as Soon as Possible
                   </h3>
                   <ul className="mt-2 ml-4">
                     {log.todos.map((todo, j) => {
