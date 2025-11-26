@@ -1,17 +1,21 @@
 {
   "nodes": [
     {
-      "name": "Typescript",
-      "id": 1
+      "id": "Typescript",
+      "group": 1,
+      "r": 10
     },
     {
-      "name": "React"
+      "id": "React",
+      "group": 1,
+      "r": 10
     }
   ],
   "links": [
     {
       "source": "Typescript",
-      "target": "React"
+      "target": "React",
+      "value": 2
     }
   ]
 }

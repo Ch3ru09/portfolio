@@ -4,6 +4,7 @@ import PortraitImage from "./assets/portrait.webp";
 import UwaterlooLogo from "./assets/uwaterloo_logo.png";
 import ChamplainLogo from "./assets/champlain_logo.png";
 import JDLMLogo from "./assets/jdlm_logo.svg";
+import TechGraph from "@/components/about/TechGraph";
 
 export default function AboutPage() {
   return (
@@ -56,6 +57,7 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+      <TechGraph />
     </>
   );
 }
