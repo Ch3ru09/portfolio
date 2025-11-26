@@ -155,7 +155,7 @@
   {
     "day": 8,
     "title": "You win some, you lose some...",
-    "log": "Though I was really productive today outside of website building, it isn't the same on the website... We had to stay wake until 3am in the morning to finish our project and present it for most of the day. For the evening, I guided my friend around school and for him to see most of the residence homes.",
+    "log": "Though I was really productive today outside of website building, it isn't the same on the website... We had to stay wake until 3am in the morning to finish our project and present it for most of the day. For the evening, I guided my friend around school and for him to see most of the residence homes, fun times :)",
     "is_done": [],
     "not_done": [
       "Finish description for About me",
@@ -174,6 +174,24 @@
     "day": 9,
     "title": "Engl...",
     "log": "I spent the better part of my day writing my paper for English... Nothing more to report, I was not able advance the website today; It's 2 am, I'm going to sleep...",
+    "is_done": [],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ]
+  },
+  {
+    "day": 10,
+    "title": "I'm trying really hard",
+    "log": "So today, the essay review went really well and I think I'll be able to learn a lot from it. I'm not here for that; I tried to implement a D3 disjointed force-directed graph but I ran into problems with the d3 types for typescript. Unless I missed something — for which I'll ask people who should know more than me — I think I'll contribute to d3/types...",
     "is_done": [],
     "not_done": [
       "Finish description for About me",
