@@ -6,7 +6,7 @@ import Addmark from "./Addmark";
 
 export default function Devlog() {
   return (
-    <ul className="mt-12 mb-12 ml-12 flex max-w-160 flex-col gap-16">
+    <ul className="mt-12 mb-12 ml-12 flex flex-col gap-16">
       {Logs.map((log, i) => {
         return (
           <li key={i} className="flex">
@@ -18,7 +18,7 @@ export default function Devlog() {
                 <p>Day {log.day} — </p> &nbsp;
                 <h2>{log.title}</h2>
               </div>
-              <div className="mt-2 mr-4 flex w-4/5 flex-col gap-4">
+              <div className="mt-2 mr-4 flex w-4/5 max-w-160 flex-col gap-4">
                 {log.logs.map((x, j) => {
                   return <p key={j}>{x}</p>;
                 })}
@@ -28,7 +28,7 @@ export default function Devlog() {
                   <h3 className="text-primary font-heading mt-6 text-2xl font-bold">
                     Done Today
                   </h3>
-                  <ul className="mt-2 ml-4">
+                  <ul className="mt-2 ml-4 max-w-160">
                     {log.is_done.map((todo, j) => {
                       return (
                         <li key={j} className="flex items-center gap-2">
@@ -53,7 +53,7 @@ export default function Devlog() {
                   <h3 className="text-primary font-heading mt-6 text-2xl font-bold">
                     Todo as Soon as Possible
                   </h3>
-                  <ul className="mt-2 ml-4">
+                  <ul className="mt-2 ml-4 max-w-160">
                     {log.todos.map((todo, j) => {
                       return (
                         <li key={j} className="flex items-center gap-2">
