@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import data from "./techs.json";
 import * as d3 from "d3";
 
 export default function TechGraph() {
   const svgRef = useRef<HTMLDivElement>(null);
+  const [data1, _setData] = useState<Data>(data);
 
   useEffect(() => {
     const svg = d3.select(svgRef.current).select("svg");
@@ -14,17 +15,20 @@ export default function TechGraph() {
     const width = 928;
     const height = 680;
 
-    const nodes_data: SimNode[] = data["nodes"];
-    const links_data: SimLink[] = data["links"];
+    const nodes_data: SimNode[] = data1["nodes"];
+    const links_data: SimLink[] = data1["links"];
 
     const simulation = d3
       .forceSimulation(nodes_data)
       .force(
         "link",
-        d3.forceLink<SimNode, SimLink>(links_data).id((d) => d.id),
+        d3
+          .forceLink<SimNode, SimLink>(links_data)
+          .id((d) => d.id)
+          .distance((d) => d.distance),
       )
-      .force("charge", d3.forceManyBody())
-      .force("x", d3.forceX())
+      .force("charge", d3.forceManyBody().strength(-1000))
+      .force("x", d3.forceX().strength(0.05))
       .force("y", d3.forceY());
 
     svg
@@ -51,7 +55,7 @@ export default function TechGraph() {
       .join("image")
       .attr("width", (d) => 2 * d.r)
       .attr("height", (d) => 2 * d.r)
-      .attr("href", "/icon.svg");
+      .attr("href", (d) => `/about/graph/icons/${d.id}.svg`);
     // .attr("fill", (d) => color(d.group.toString()))
 
     node.append("title").text((d) => d.id);
@@ -130,7 +134,7 @@ export default function TechGraph() {
     return () => {
       simulation.stop();
     };
-  });
+  }, [data1]);
 
   return (
     <div ref={svgRef}>
@@ -146,4 +150,10 @@ interface SimNode extends d3.SimulationNodeDatum {
 }
 interface SimLink extends d3.SimulationLinkDatum<SimNode> {
   value: number;
+  distance: number;
+}
+
+interface Data {
+  nodes: SimNode[];
+  links: SimLink[];
 }

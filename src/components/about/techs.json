@@ -1,21 +1,44 @@
 {
   "nodes": [
     {
-      "id": "Typescript",
+      "id": "typescript",
       "group": 1,
-      "r": 10
+      "r": 50
     },
     {
-      "id": "React",
+      "id": "react",
       "group": 1,
-      "r": 10
+      "r": 40
+    },
+    {
+      "id": "nextjs",
+      "group": 1,
+      "r": 40
+    },
+    {
+      "id": "tailwindcss",
+      "group": 1,
+      "r": 40
     }
   ],
   "links": [
     {
-      "source": "Typescript",
-      "target": "React",
-      "value": 2
+      "source": "typescript",
+      "target": "react",
+      "value": 4,
+      "distance": 100
+    },
+    {
+      "source": "react",
+      "target": "nextjs",
+      "value": 4,
+      "distance": 100
+    },
+    {
+      "source": "react",
+      "target": "tailwindcss",
+      "value": 4,
+      "distance": 100
     }
   ]
 }
