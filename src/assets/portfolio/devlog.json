@@ -228,5 +228,26 @@
       "Add technologies used for About me",
       "Add animations for home page"
     ]
+  },
+  {
+    "day": 11,
+    "title": "Didn't manage to do anything",
+    "logs": [
+      "Too many things to do for school, it's cruchtime right now; until I finish my english essay on the 2nd, I don't think anything will be done unfortunately.",
+      "I'll still try to update though..."
+    ],
+    "is_done": [],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ]
   }
 ]
