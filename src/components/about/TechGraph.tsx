@@ -65,7 +65,14 @@ export default function TechGraph() {
         .drag()
         .on("start", ondragstart)
         .on("drag", dragged)
-        .on("end", dragended),
+        .on("end", dragended) as (
+        selection: d3.Selection<
+          d3.BaseType | SVGImageElement,
+          SimNode,
+          SVGGElement,
+          unknown
+        >,
+      ) => void,
     );
 
     simulation.on("tick", () => {
@@ -114,18 +121,23 @@ export default function TechGraph() {
       node.attr("x", (d) => d.x!).attr("y", (d) => d.y!);
     });
 
-    function ondragstart(event) {
+    function ondragstart(event: { active: boolean; subject: SimNode }) {
       if (!event.active) simulation.alphaTarget(0.3).restart();
       event.subject.fx = event.subject.x;
       event.subject.fy = event.subject.y;
     }
 
-    function dragged(event) {
+    function dragged(event: {
+      active: boolean;
+      subject: SimNode;
+      x: number;
+      y: number;
+    }) {
       event.subject.fx = event.x;
       event.subject.fy = event.y;
     }
 
-    function dragended(event) {
+    function dragended(event: { active: boolean; subject: SimNode }) {
       if (!event.active) simulation.alphaTarget(0);
       event.subject.fx = null;
       event.subject.fy = null;
