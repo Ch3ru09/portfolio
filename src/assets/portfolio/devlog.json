@@ -249,5 +249,25 @@
       "Add technologies used for About me",
       "Add animations for home page"
     ]
+  },
+  {
+    "day": 12,
+    "title": "Nothing to report",
+    "logs": [
+      "I still have to finish my projects but I did go rock climbing before my quiz in the morning"
+    ],
+    "is_done": [],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ]
   }
 ]
