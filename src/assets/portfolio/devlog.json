@@ -269,5 +269,25 @@
       "Add technologies used for About me",
       "Add animations for home page"
     ]
+  },
+  {
+    "day": 13,
+    "title": "Still so much to do",
+    "logs": [
+      "I will add more icons for the technologies I can use as soon as I can"
+    ],
+    "is_done": [],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ]
   }
 ]
