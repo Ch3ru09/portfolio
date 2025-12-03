@@ -289,5 +289,23 @@
       "Add technologies used for About me",
       "Add animations for home page"
     ]
+  },
+  {
+    "day": 14,
+    "title": "I was deadly sick",
+    "logs": ["The title says it all..."],
+    "is_done": [],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me",
+      "Add animations for home page"
+    ]
   }
 ]
