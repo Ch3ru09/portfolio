@@ -19,6 +19,16 @@
       "id": "tailwindcss",
       "group": 1,
       "r": 40
+    },
+    {
+      "id": "expressjs",
+      "group": 2,
+      "r": 40
+    },
+    {
+      "id": "mysql",
+      "group": 4,
+      "r": 40
     }
   ],
   "links": [
