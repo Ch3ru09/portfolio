@@ -53,7 +53,10 @@ export default function AboutPage() {
           </h1>
           <p className="w-3/4">
             Hey, I&apos;m Xu ning Liang, a first year Electrical Engineering
-            student at the University of Waterloo.
+            student at the University of Waterloo. I started web development in
+            summer of 2021 where I got to learn backend development from my
+            mentor in expressjs and ejs. Using react as frontend, I built my
+            first app.
           </p>
         </div>
       </div>
