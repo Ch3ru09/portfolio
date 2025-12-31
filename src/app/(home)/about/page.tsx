@@ -36,7 +36,7 @@ export default function AboutPage() {
             </li>
           </ul>
         </div>
-        <div className="flex grow-2 basis-0 flex-col items-center gap-8">
+        <div className="flex grow-2 basis-0 flex-col items-center gap-12">
           <h1 className="font-calligraphy text-primary flex justify-center">
             <div className="mr-6 flex items-center">
               <p className={"text-8xl"}>梁</p>
@@ -51,13 +51,22 @@ export default function AboutPage() {
               <p className={"[writing-mode:sideways-rl]"}>Ning</p>
             </div>
           </h1>
-          <p className="w-3/4">
-            Hey, I&apos;m Xu ning Liang, a first year Electrical Engineering
-            student at the University of Waterloo. I started web development in
-            summer of 2021 where I got to learn backend development from my
-            mentor in expressjs and ejs. Using react as frontend, I built my
-            first app.
-          </p>
+          <div className="w-3/4 flex flex-col gap-8">
+            <p className="mt-0 mb-0">
+              Hey, I&apos;m Xu ning Liang, a first year Electrical Engineering
+              student at the University of Waterloo.
+            </p>
+            <p className="mt-0 mb-0">
+              I started web development in summer of 2021 where I got to learn
+              fullstack development from my mentor. Using react as frontend,
+              expressjs and ejs as backend, mysql as database, I built my first
+              app. Of course, like any beginner developper and as you could've
+              guessed, my first app was a humble todolist.
+              <br /> <br />
+              Though, through it, I was able to learn a multitude of different
+              best practices that keep guiding me.
+            </p>
+          </div>
         </div>
       </div>
       <TechGraph />
