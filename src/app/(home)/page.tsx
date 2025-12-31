@@ -3,7 +3,10 @@ import Cards, { Project } from "@/components/(home)/Cards";
 export default function Home() {
   return (
     <>
-      <div className="mr-[10%] ml-[10%] flex">
+      <div
+        className={`mr-[10vw] ml-[10vw] relative`}
+        style={{ height: `${Math.floor(projects.length / 2) * 100}vh` }}
+      >
         <div className="fixed top-24">
           <h1 className="font-heading text-primary text-6xl font-bold">
             Liang, Xu ning

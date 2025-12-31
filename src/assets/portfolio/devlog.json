@@ -307,5 +307,21 @@
       "Add technologies used for About me",
       "Add animations for home page"
     ]
+  },
+  {
+    "day": 43,
+    "title": "I'm finally back",
+    "logs": ["After finals and the fallout from them, I'm back and ready to do some work"],
+    "is_done": ["Add animations for home page"],
+    "not_done": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me"
+    ],
+    "todos": [
+      "Finish description for About me",
+      "Add picture for portfolio",
+      "Add technologies used for About me"
+    ]
   }
 ]

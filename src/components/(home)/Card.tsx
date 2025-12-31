@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import Link from "next/link";
 import { Project } from "./Cards";
 import { useRef } from "react";
@@ -11,17 +11,32 @@ export default function Card({ x }: { x: Project }) {
     target: ref,
     offset: ["start end", "start start"],
   });
+  const springY = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   const left = useTransform(
-    scrollYProgress,
+    springY,
     [0, 1],
     ["0%", "100%"],
   );
+  const translate = useTransform(
+    springY,
+    [0, 1],
+    ["0% 0%", "-100% 0%"],
+  );
+  // const scale = useTransform(
+  //   springY,
+  //   [0.5, 0.75, 0.9],
+  //   ["1", "2", "1"],
+  // );
 
   return (
     <motion.li
       ref={ref}
-      style={{ left }}
-      className="relative font-body aspect-square w-1/4 text-2xl"
+      style={{ left, translate }}
+      className="relative font-body aspect-square w-fit h-auto text-2xl"
     >
       <Link
         href={"/project/" + x.link}
