@@ -1,6 +1,12 @@
 "use client";
 
-import { motion, useScroll, useSpring, useTransform } from "motion/react";
+import {
+  cubicBezier,
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+} from "motion/react";
 import Link from "next/link";
 import { Project } from "./Cards";
 import { useRef } from "react";
@@ -20,11 +26,13 @@ export default function Card({ x }: { x: Project }) {
     springY,
     [0, 1],
     ["0%", "100%"],
+    { ease: cubicBezier(0.17, 0.67, 0.83, 0.67) },
   );
   const translate = useTransform(
     springY,
     [0, 1],
     ["0% 0%", "-100% 0%"],
+    { ease: cubicBezier(0.17, 0.67, 0.83, 0.67) },
   );
   // const scale = useTransform(
   //   springY,
