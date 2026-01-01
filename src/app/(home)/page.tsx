@@ -1,4 +1,5 @@
 import Cards, { Project } from "@/components/(home)/Cards";
+import Labels from "@/components/(home)/Labels";
 
 export default function Home() {
   return (
@@ -13,11 +14,7 @@ export default function Home() {
           </h1>
           <ul className="mt-8 pl-8">
             {projects.map((x, i) => {
-              return (
-                <li className="font-body text-2xl" key={i}>
-                  — {x.title}
-                </li>
-              );
+              return <Labels x={x} i={i} />;
             })}
           </ul>
         </div>
@@ -34,3 +31,5 @@ const projects: Project[] = [
   { title: "Blackjack", link: "blackjack", available: false },
   { title: "Pebble", link: "pebble", available: false },
 ];
+
+export const nbProjects = projects.length;
