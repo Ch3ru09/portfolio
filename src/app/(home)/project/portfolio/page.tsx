@@ -24,7 +24,10 @@ export default function PortfolioPage() {
             seamless user experience.
           </p>
           <p>
-            <Link href={"/project/portfolio/devlog"} className="mx-2">
+            <Link
+              href={"/project/portfolio/devlog"}
+              className="mx-2 text-xl text-primary-80"
+            >
               See devlog
             </Link>
           </p>
