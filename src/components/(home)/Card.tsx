@@ -26,31 +26,31 @@ export default function Card({ x }: { x: Project }) {
     springY,
     [0, 1],
     ["0%", "100%"],
-    { ease: cubicBezier(0.17, 0.67, 0.83, 0.67) },
+    { ease: cubicBezier(0.1, 0.7, 0.5, 0.9) },
   );
   const translate = useTransform(
     springY,
     [0, 1],
     ["0% 0%", "-100% 0%"],
-    { ease: cubicBezier(0.17, 0.67, 0.83, 0.67) },
+    { ease: cubicBezier(0, 0.7, 0.5, 0.9) },
   );
-  // const scale = useTransform(
-  //   springY,
-  //   [0.5, 0.75, 0.9],
-  //   ["1", "2", "1"],
-  // );
+  const width = useTransform(
+    springY,
+    [0.5, 0.75, 1],
+    ["20%", "25%", "20%"],
+  );
 
   return (
     <motion.li
       ref={ref}
-      style={{ left, translate }}
-      className="relative font-body aspect-square w-fit h-auto text-2xl"
+      style={{ left, translate, width }}
+      className="relative font-body aspect-square w-1/5 h-auto text-2xl"
     >
       <Link
         href={"/project/" + x.link}
         className={`${x.available ? "bg-primary-20" : "bg-foreground-20"} ${
           x.available ? "" : "pointer-events-none hover:cursor-not-allowed"
-        } text-primary flex h-52 w-52 items-center justify-center text-center`}
+        } text-primary flex h-full w-full items-center justify-center text-center`}
       >
         <h2>{x.title}</h2>
       </Link>

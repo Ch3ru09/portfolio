@@ -46,7 +46,7 @@
 
 body {
   background-color: transparent;
-  color: color-mix(in oklab, var(--primary) 60%, var(--background));
+  color: var(--color-primary-60);
 
   font-family: var(--font-synonym);
   font-weight: 500;

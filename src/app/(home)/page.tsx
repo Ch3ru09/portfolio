@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div
         className={`mr-[10vw] ml-[10vw] relative`}
-        style={{ height: `${Math.floor(projects.length / 2) * 100}vh` }}
+        style={{ height: `${Math.floor(projects.length / 2) * 100 + 25}vh` }}
       >
         <div className="fixed top-24">
           <h1 className="font-heading text-primary text-6xl font-bold">
