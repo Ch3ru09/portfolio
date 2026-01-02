@@ -14,7 +14,7 @@ export default function Home() {
           </h1>
           <ul className="mt-8 pl-8">
             {projects.map((x, i) => {
-              return <Labels x={x} i={i} />;
+              return <Labels key={i} x={x} i={i} />;
             })}
           </ul>
         </div>
