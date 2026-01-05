@@ -50,7 +50,7 @@ export default function Card({ x }: { x: Project }) {
         href={"/project/" + x.link}
         className={`${x.available ? "bg-primary-20" : "bg-foreground-20"} ${
           x.available ? "" : "pointer-events-none hover:cursor-not-allowed"
-        } text-primary flex h-full w-full items-center justify-center text-center`}
+        } text-primary flex h-full w-full items-center justify-center text-center rounded-full`}
       >
         <h2>{x.title}</h2>
       </Link>

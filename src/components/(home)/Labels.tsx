@@ -11,7 +11,7 @@ export default function Labels({ x, i }: { x: Project; i: number }) {
     [(i - 1) / nbProjects, i / nbProjects, (i + 1) / nbProjects],
     [
       "var(--color-primary-60)",
-      "var(--color-primary)",
+      "var(--color-primary-90)",
       "var(--color-primary-60)",
     ],
   );
