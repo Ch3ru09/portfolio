@@ -66,6 +66,11 @@ export default function AboutPage() {
               Though, through it, I was able to learn a multitude of different
               best practices that keep guiding me.
             </p>
+            <p>
+              Outside of programming, I also really enjoy playing guitar. When I
+              feel down, I take my guitar and sing along to it. It gets me
+              distracted from my problems {":)"}
+            </p>
           </div>
         </div>
       </div>
