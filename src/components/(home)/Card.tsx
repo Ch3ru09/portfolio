@@ -36,7 +36,7 @@ export default function Card({ x }: { x: Project }) {
   );
   const width = useTransform(
     springY,
-    [0.5, 0.75, 1],
+    [0.6, 0.85, 1.1],
     ["20%", "25%", "20%"],
   );
 
