@@ -71,6 +71,9 @@ export default function AboutPage() {
               feel down, I take my guitar and sing along to it. It gets me
               distracted from my problems {":)"}
             </p>
+            <p>
+              When it comes to sports, I love playing badminton and volleyball.
+            </p>
           </div>
         </div>
       </div>
