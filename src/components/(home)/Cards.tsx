@@ -8,8 +8,14 @@ import {
   useTransform,
 } from "motion/react";
 import Card from "./Card";
+import { RefObject } from "react";
 
-export default function Cards({ projects }: { projects: Project[] }) {
+export default function Cards(
+  { projects, cardsRef }: {
+    projects: Project[];
+    cardsRef: RefObject<HTMLUListElement | null>;
+  },
+) {
   const { scrollY } = useScroll();
   const springY = useSpring(scrollY, {
     stiffness: 100,
@@ -27,6 +33,7 @@ export default function Cards({ projects }: { projects: Project[] }) {
     <motion.ul
       style={{ y }}
       className="mt-[10%] fixed flex flex-col gap-10 w-[calc(80vw-12rem)]"
+      ref={cardsRef}
     >
       {projects.map((x, i) => {
         return <Card x={x} key={i} />;

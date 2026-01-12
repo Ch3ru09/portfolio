@@ -9,9 +9,19 @@ import {
 } from "motion/react";
 import { Project } from "./Cards";
 import { nbProjects } from "@/app/(home)/page";
+import { RefObject } from "react";
 
-export default function Labels({ x, i }: { x: Project; i: number }) {
-  const { scrollYProgress } = useScroll();
+export default function Labels(
+  { x, i, cardsRef }: {
+    x: Project;
+    i: number;
+    cardsRef: RefObject<HTMLUListElement | null>;
+  },
+) {
+  const { scrollYProgress } = useScroll({
+    target: cardsRef,
+    offset: [`start ${0.15}`, "end start"],
+  });
   const springY = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
