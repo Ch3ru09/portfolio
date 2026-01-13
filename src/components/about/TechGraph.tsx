@@ -142,6 +142,11 @@ export default function TechGraph() {
       event.subject.fx = null;
       event.subject.fy = null;
     }
+
+    return () => {
+      svg.selectAll("*").remove();
+      simulation.stop();
+    };
   }, [data1]);
 
   return (
