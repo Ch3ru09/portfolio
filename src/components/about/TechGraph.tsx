@@ -151,7 +151,7 @@ export default function TechGraph() {
 
   return (
     <div ref={svgRef}>
-      <svg />
+      <svg className="w-full" />
     </div>
   );
 }

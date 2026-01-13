@@ -51,20 +51,23 @@ export default function AboutPage() {
               <p className={"[writing-mode:sideways-rl]"}>Ning</p>
             </div>
           </h1>
-          <div className="w-3/4 flex flex-col gap-8">
+          <div className="w-3/4 flex flex-col gap-16">
             <p className="mt-0 mb-0">
               Hey, I&apos;m Xu ning Liang, a first year Electrical Engineering
               student at the University of Waterloo.
             </p>
             <p className="mt-0 mb-0">
-              I started web development in summer of 2021 where I got to learn
-              fullstack development from my mentor. Using react as frontend,
-              expressjs and ejs as backend, mysql as database, I built my first
-              app. Of course, like any beginner developper and as you could've
-              guessed, my first app was a humble todolist.
+              I started web development in summer of 2021, at the height of
+              pandemic, where I got to learn fullstack development from my
+              mentor. Using react as frontend, expressjs and ejs as backend,
+              mysql as database, I was able to build my first app. Of course,
+              like any beginner developper and as you could've guessed, my first
+              app was a humble todolist.
               <br /> <br />
               Though, through it, I was able to learn a multitude of different
-              best practices that keep guiding me.
+              best practices that keep guiding me even to this day. Things like
+              security, database management, encoding, how asynchronous js works
+              and clean code writing.
             </p>
             <p>
               Outside of programming, I also really enjoy playing guitar. When I
@@ -72,16 +75,29 @@ export default function AboutPage() {
               control how I express melodies feels great to me because it allows
               me to bring my own color to my surroundings. Something that is
               also reflected from my work philosophy: if it's something that
-              already exist, put your own personality into it, if it doesn't
+              already exist, put your own personality into it; if it doesn't
               exist, show it to the world so others can enjoy it too.
             </p>
             <p>
               When it comes to sports, I love playing badminton and volleyball.
-              I've been playing badminton casually since
+              I've been playing badminton casually since around 2018. Joined my
+              highschool's team in 2018 and trained with my cegep's team in
+              2025. Now in university, I rarely play badminton since it's really
+              hard to move all my gear over there.
+              <br /> <br />
+              Instead, I played a lot of volleyball, a sport that I picked up at
+              the start of 2025. I started loving volleyball after playing in a
+              friendly tournament with air cadets where I had a lot of fun and
+              instantly fell in love with the sport. I joined the university
+              club and played a lot of volleyball in fall of 2025 during my
+              first semester in uni.
             </p>
           </div>
         </div>
       </div>
+      <h2 className="text-center font-heading text-primary mt-32 text-4xl font-bold">
+        Skills
+      </h2>
       <TechGraph />
     </>
   );
