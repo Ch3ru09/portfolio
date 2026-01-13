@@ -66,13 +66,13 @@ export default function TechGraph() {
         .on("start", ondragstart)
         .on("drag", dragged)
         .on("end", dragended) as (
-        selection: d3.Selection<
-          d3.BaseType | SVGImageElement,
-          SimNode,
-          SVGGElement,
-          unknown
-        >,
-      ) => void,
+          selection: d3.Selection<
+            d3.BaseType | SVGImageElement,
+            SimNode,
+            SVGGElement,
+            unknown
+          >,
+        ) => void,
     );
 
     simulation.on("tick", () => {
@@ -142,10 +142,6 @@ export default function TechGraph() {
       event.subject.fx = null;
       event.subject.fy = null;
     }
-
-    return () => {
-      simulation.stop();
-    };
   }, [data1]);
 
   return (
