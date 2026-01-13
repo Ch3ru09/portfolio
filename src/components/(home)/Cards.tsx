@@ -32,11 +32,11 @@ export default function Cards(
   return (
     <motion.ul
       style={{ y }}
-      className="mt-[10%] fixed flex flex-col gap-10 w-[calc(80vw-12rem)]"
+      className="mt-[10%] fixed flex flex-col gap-10 w-[calc(80vw-12rem)] max-w-[1000px]"
       ref={cardsRef}
     >
       {projects.map((x, i) => {
-        return <Card x={x} key={i} />;
+        return <Card card={x} key={i} />;
       })}
     </motion.ul>
   );
