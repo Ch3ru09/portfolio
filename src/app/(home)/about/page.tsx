@@ -68,11 +68,16 @@ export default function AboutPage() {
             </p>
             <p>
               Outside of programming, I also really enjoy playing guitar. When I
-              feel down, I take my guitar and sing along to it. It gets me
-              distracted from my problems {":)"}
+              feel down, I take my guitar and sing along to it. Being able to
+              control how I express melodies feels great to me because it allows
+              me to bring my own color to my surroundings. Something that is
+              also reflected from my work philosophy: if it's something that
+              already exist, put your own personality into it, if it doesn't
+              exist, show it to the world so others can enjoy it too.
             </p>
             <p>
               When it comes to sports, I love playing badminton and volleyball.
+              I've been playing badminton casually since
             </p>
           </div>
         </div>
