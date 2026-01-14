@@ -63,7 +63,8 @@ export default function PortfolioPage() {
           </div>
         </div>
       </div>
-      <div>
+      {
+        /* <div>
         <h2 className="font-heading text-primary mt-32 text-4xl font-bold">
           Timeline
         </h2>
@@ -88,7 +89,8 @@ export default function PortfolioPage() {
         <h2 className="font-heading text-primary mt-8 text-4xl font-bold">
           Future Plans
         </h2>
-      </div>
+      </div> */
+      }
     </div>
   );
 }
