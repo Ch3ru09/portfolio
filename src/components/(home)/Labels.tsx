@@ -1,13 +1,7 @@
 "use client";
 
-import {
-  motion,
-  useMotionValueEvent,
-  useScroll,
-  useSpring,
-  useTransform,
-} from "motion/react";
-import { Project } from "./Cards";
+import { motion } from "motion/react";
+import { Project } from "@/app/(home)/page";
 
 export default function Labels({ x, i }: { x: Project; i: number }) {
   const color = "var(--color-primary-90)";
