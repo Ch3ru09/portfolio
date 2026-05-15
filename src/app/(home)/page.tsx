@@ -2,13 +2,7 @@
 
 import Card from "@/components/(home)/Card";
 import Labels from "@/components/(home)/Labels";
-import {
-  motion,
-  useMotionValueEvent,
-  useScroll,
-  useSpring,
-  useTransform,
-} from "motion/react";
+import { motion, useScroll, useSpring, useTransform } from "motion/react";
 
 export default function Home() {
   const { scrollY } = useScroll();
